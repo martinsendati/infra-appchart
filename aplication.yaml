@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: marto-app-argo-application-1
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/martinsendati/infra-conchart
+    path: app-conchart
+    targetRevision: HEAD
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: marto-app
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      #prune hace que Argo borre los componentes borrados del repo. Si esto estuviese en false y borramos un deployment.yaml del repo, el deployment seguiria existiendo en el cluster
+      prune: true
+        # selfHeal hace que cada vez que haya un cambio manual en el cluster, por ejemplo borrar un pod con kubectl, Argo anule y restaure el cluster a lo que dice el repo
+      selfHeal: true
