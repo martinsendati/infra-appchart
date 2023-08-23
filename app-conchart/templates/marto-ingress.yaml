@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.appName }}
 spec:
   rules:
-    - host: app-marto.com
+    - host: app-martooo.com
       http:
         paths:
           - path: /
