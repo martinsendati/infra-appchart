@@ -5,7 +5,7 @@ metadata:
   namespace: {{ .Values.namespace }}
 spec:
   rules:
-    - host: app-martooo.com
+    - host: martin.com
       http:
         paths:
           - path: /
