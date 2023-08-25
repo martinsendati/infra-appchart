@@ -11,3 +11,4 @@ type: ClusterIP
 
 namespace: app-conchart
 
+replicaCount: 2
