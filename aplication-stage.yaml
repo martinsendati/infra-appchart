@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: marto-app-argo-application-1
+  name: app-conchart-stage
   namespace: argocd
 spec:
   project: default
