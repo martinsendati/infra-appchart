@@ -11,7 +11,7 @@ spec:
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
-    namespace: app-conchart-stage
+    namespace: app-conchart
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
