@@ -5,7 +5,7 @@ metadata:
   labels:
     app: {{ .Values.app }}
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{ include "environmentValues.replicaCount" . }} 
   selector:
     matchLabels:
       app: {{ .Values.app }}
