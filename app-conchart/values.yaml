@@ -11,5 +11,3 @@ type: ClusterIP
 
 namespace: app-conchart
 
-environmentType: dev
-# otros valores comunes para todos los entornos
