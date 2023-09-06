@@ -1,7 +1,5 @@
 appName: martooo
 
-app: marto-app
-
 ports:
   protocol: TCP
   port: 80
