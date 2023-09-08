@@ -9,3 +9,4 @@ type: ClusterIP
 
 namespace: app-conchart
 
+app: marto-app
