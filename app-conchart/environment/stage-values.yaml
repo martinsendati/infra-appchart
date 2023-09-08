@@ -1,2 +1,4 @@
+name-deploy: stage
+
 
 replicaCount: 2

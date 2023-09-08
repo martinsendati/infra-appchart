@@ -1,2 +1,3 @@
+name-deploy: prod
 
 replicaCount: 3
