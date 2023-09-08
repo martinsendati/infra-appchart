@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/martinsendati/infra-conchart
-    path: app-conchart/dev
+    path: app-conchart
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
@@ -20,5 +20,6 @@ spec:
       prune: true
         # selfHeal hace que cada vez que haya un cambio manual en el cluster, por ejemplo borrar un pod con kubectl, Argo anule y restaure el cluster a lo que dice el repo
       selfHeal: true
+  values: app-conchart/environment/dev-values.yaml
 
 
