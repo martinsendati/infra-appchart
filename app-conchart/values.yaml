@@ -10,3 +10,7 @@ type: ClusterIP
 namespace: app-conchart
 
 app: marto-app
+
+environmentType: dev
+
+replicaCount: 3

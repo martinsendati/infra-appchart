@@ -8,10 +8,9 @@ spec:
   source:
     repoURL: https://github.com/martinsendati/infra-conchart
     path: app-conchart
-    targetRevision: HEAD
     helm:
       valueFiles:
-        - app-conchart/environment/dev-values.yaml
+        - environment/dev-values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: dev

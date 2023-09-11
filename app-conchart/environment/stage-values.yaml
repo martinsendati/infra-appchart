@@ -1,4 +1,4 @@
-name-deploy: stage
+environmentType: stage
 
 
 replicaCount: 2

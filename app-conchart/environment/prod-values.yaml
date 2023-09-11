@@ -1,3 +1,3 @@
-name-deploy: prod
+environmentType: prod
 
 replicaCount: 3
