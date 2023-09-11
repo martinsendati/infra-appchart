@@ -10,7 +10,7 @@ spec:
     path: app-conchart
     helm: 
       valueFiles:
-        - environment/dev-values.yaml
+        - app-conchart/environment/dev-values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
