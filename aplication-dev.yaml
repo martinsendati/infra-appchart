@@ -8,7 +8,8 @@ spec:
   source:
     repoURL: https://github.com/martinsendati/infra-conchart
     path: app-conchart
-    helm: 
+    targetRevision: HEAD
+    helm:
       valueFiles:
         - app-conchart/environment/dev-values.yaml
   destination:
