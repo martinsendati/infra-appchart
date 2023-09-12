@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-conchart-dev
+  name: app-chart-dev
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/martinsendati/infra-conchart
+    repoURL: https://github.com/martinsendati/infra-appchart.git
     path: app-chart
     helm:
       valueFiles:
