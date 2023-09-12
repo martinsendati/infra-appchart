@@ -11,6 +11,5 @@ namespace: app-chart
 
 app: marto-app
 
-environmentType: dev
 
-replicaCount: 3
+
