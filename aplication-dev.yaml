@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/martinsendati/infra-conchart
-    path: app-conchart
+    path: app-chart
     helm:
       valueFiles:
         - environment/dev-values.yaml

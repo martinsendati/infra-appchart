@@ -7,7 +7,7 @@ ports:
 
 type: ClusterIP
 
-namespace: app-conchart
+namespace: app-chart
 
 app: marto-app
 
