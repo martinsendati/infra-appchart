@@ -22,4 +22,3 @@ spec:
       prune: true
         # selfHeal hace que cada vez que haya un cambio manual en el cluster, por ejemplo borrar un pod con kubectl, Argo anule y restaure el cluster a lo que dice el repo
       selfHeal: true
-  
